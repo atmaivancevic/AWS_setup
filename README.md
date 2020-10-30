@@ -12,7 +12,7 @@ Create a new i3.large instance to start installing programs
 
 Connect to the new instance
 
-`ssec2C -i IDNUMBER`
+`ssec2C -i ID_NUMBER`
 
 Once inside the instance, install git
 
