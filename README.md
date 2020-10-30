@@ -14,5 +14,6 @@ Connect to the new instance
 
 `ssec2C -i IDNUMBER`
 
-Once inside the instance, copy over the install_all.sh script
+Once inside the instance, copy over the [AWS_setup/install_all.sh](install_all) script (e.g. using nano or vim or git)
+
 
