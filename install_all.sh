@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ###################################################################
 # INSTALL ESSENTIALS, FORMAT SSD, MAKE BIR & SRC DIRs
 
