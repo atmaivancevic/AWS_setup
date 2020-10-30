@@ -56,7 +56,7 @@ chmod +x config_RM.sh
 
 **Feed in the following at each of the prompts:**
 
-The full path including the name for the TRF program. TRF_PGRM:`/mnt/local/src/TandemRepeatFinder-409.linux64/trf`
+The full path including the name for the TRF program. TRF_PGRM: `/mnt/local/src/TandemRepeatFinder-409.linux64/trf`
 
 Add a Search Engine, Enter Selection: `2`
 
@@ -88,7 +88,7 @@ Add a Search Engine, Enter Selection: `3`
 
 LTR Structural Identification Pipeline [optional], Do you wish to configure RepeatModeler for this type of analysis: `n`
 
-**This should configure RepeatModeler. You're all set!**
+**Congratulations!  RepeatModeler is now ready to use.**
 
 ## 4. Run some things
 
