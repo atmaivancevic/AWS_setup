@@ -96,6 +96,8 @@ Remember to either log out, or `source ~/.profile` first, to update your .profil
 
 Then you can run any of the installed programs from anywhere!
 
+I suggest running things and saving giles on `/mnt/local` (has much more space than $HOME)
+
 ## 5. Terminate the instance when your analysis is done
 
 Log out.
