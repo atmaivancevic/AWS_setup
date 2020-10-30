@@ -92,15 +92,17 @@ LTR Structural Identification Pipeline [optional], Do you wish to configure Repe
 
 ## 4. Run some things
 
-`source ~/.profile` 
+Remember to either log out, or `source ~/.profile` first, to update your .profile to include the new bin dir. 
 
-Now you can run any of the installed programs from anywhere!
+Then you can run any of the installed programs from anywhere!
 
 ## 5. Terminate the instance when your analysis is done
 
 Log out.
 
-`exit`
+```
+exit
+```
 
 Then terminate the instance
 
