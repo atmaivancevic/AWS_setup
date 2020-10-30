@@ -82,7 +82,7 @@ Add a Search Engine, Enter Selection: `3`
 
 LTR Structural Identification Pipeline [optional], Do you wish to configure RepeatModeler for this type of analysis: `n`
 
-** This should configure RepeatModeler!**
+**This should configure RepeatModeler!**
 
 
 
