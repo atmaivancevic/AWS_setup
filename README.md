@@ -4,8 +4,7 @@
 
 Check to see if there are already instances running
 
-```ssec2C -l
-```
+```ssec2C -l```
 
 Create a new i3.large instance to start installing programs
 
@@ -25,6 +24,10 @@ Clone this AWS_setup dir, including [install_all.sh](install_all.sh) and [config
 
 Run the [install_all.sh](install_all.sh) script
 
-
+```
+cd AWS_setup/
+chmod +x install_all.sh 
+./install_all.sh 
+```
 
 
