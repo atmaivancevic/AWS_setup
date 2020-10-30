@@ -1,6 +1,6 @@
-## AWS_setup
+# AWS_setup
 
-# How to launch a new instance:
+### How to launch a new instance:
 
 Check to see if there are already instances running
 
