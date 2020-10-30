@@ -48,7 +48,7 @@ chmod +x config_RM.sh
 ./config_RM.sh 
 ```
 
-Feed in the following at each of the prompts:
+**Feed in the following at each of the prompts:**
 
 The full path including the name for the TRF program. TRF_PGRM:`/mnt/local/src/TandemRepeatFinder-409.linux64/trf`
 
