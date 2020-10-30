@@ -1,6 +1,8 @@
 # AWS_setup
 
-### Example for setting up a new instance
+## Example for setting up a new instance
+
+### 1. Launch an instance and log in
 
 Check to see if there are already instances running
 
@@ -19,6 +21,8 @@ Connect to the new instance
 ```
 ssec2C -i ID_NUMBER
 ```
+
+### 2. Install all the programs we'll need
 
 Once inside the instance, install git
 
@@ -40,7 +44,9 @@ chmod +x install_all.sh
 ./install_all.sh 
 ```
 
-Next, run the [config_RM.sh](config_RM.sh) script. Note that you'll need to feed in program dirs at the prompts. 
+### 3. Configure RepeatMasker and RepeatModeler
+
+Run the [config_RM.sh](config_RM.sh) script. You'll need to feed in the answers below at the prompts. 
 
 ```
 cd AWS_setup/
