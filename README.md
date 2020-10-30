@@ -52,6 +52,7 @@ Feed in the following at each of the prompts:
 
 The full path including the name for the TRF program.
 TRF_PGRM:
+
 `/mnt/local/src/TandemRepeatFinder-409.linux64/trf`
 
 Add a Search Engine:
