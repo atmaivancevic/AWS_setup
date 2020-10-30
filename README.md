@@ -51,14 +51,14 @@ chmod +x config_RM.sh
 Feed in the following at each of the prompts:
 
 The full path including the name for the TRF program. TRF_PGRM:`/mnt/local/src/TandemRepeatFinder-409.linux64/trf`
+
 Add a Search Engine: `2`
+
 The path to the installation of the RMBLAST sequence alignment program. RMBLAST_DIR: `/mnt/local/src/rmblast-2.10.0/bin`
 
-Do you want RMBlast to be your default search engine for Repeatmasker (Y/N)?
-`Y`
+Do you want RMBlast to be your default search engine for Repeatmasker (Y/N)? `Y`
 
-Add a Search Engine:
-`5`
+Add a Search Engine: `5`
 
 You should then see confirmation that RepeatMasker has been configured! 
 Next, configure RepeatModeler.
