@@ -66,7 +66,7 @@ Do you want RMBlast to be your default search engine for Repeatmasker (Y/N)? `Y`
 
 Add a Search Engine, Enter Selection: `5`
 
-**You should then see confirmation that RepeatMasker has been configured! Yay!**
+### You should then see confirmation that RepeatMasker has been configured! Yay!
 
 Next, configure RepeatModeler. You will need to enter the following:
 
