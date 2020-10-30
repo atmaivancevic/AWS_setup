@@ -14,6 +14,11 @@ Connect to the new instance
 
 `ssec2C -i IDNUMBER`
 
-Once inside the instance, copy over the [install_all.sh](install_all.sh) script (e.g. using nano or vim or git)
+Once inside the instance, install git
 
+`sudo apt-get install git`
+
+Clone this AWS_setup dir, including [install_all.sh](install_all.sh) and [config_RM.sh](config_RM.sh) scripts
+
+`git clone git@github.com:atmaivancevic/AWS_setup.git`
 
