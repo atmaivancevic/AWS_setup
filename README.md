@@ -60,8 +60,29 @@ Do you want RMBlast to be your default search engine for Repeatmasker (Y/N)? `Y`
 
 Add a Search Engine: `5`
 
-You should then see confirmation that RepeatMasker has been configured! 
-Next, configure RepeatModeler.
+You should then see confirmation that RepeatMasker has been configured! Yay!
+
+Next, configure RepeatModeler. You will need to enter the following:
+
+PERL_INSTALLATION_PATH: `/usr/bin/perl`
+
+REPEATMASKER_DIR: `/mnt/local/src/RepeatMasker`
+
+RECON_DIR: `/mnt/local/src/RECON-1.08/bin`
+
+RSCOUT_DIR: `/mnt/local/src/RepeatScout-1.0.6`
+
+TRF_PGRM: `/mnt/local/src/TandemRepeatFinder-409.linux64/trf`
+
+Add a Search Engine, Enter Selection: `1`
+
+RMBLAST_DIR: `/mnt/local/src/rmblast-2.10.0/bin`
+
+Add a Search Engine, Enter Selection: `3`
+
+LTR Structural Identification Pipeline [optional], Do you wish to configure RepeatModeler for this type of analysis: `n`
+
+
 
 
 
