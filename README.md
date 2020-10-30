@@ -2,7 +2,7 @@
 
 ## Example for setting up a new instance
 
-### 1. Launch an instance and log in
+## 1. Launch an instance and log in
 
 Check to see if there are already instances running
 
@@ -22,7 +22,7 @@ Connect to the new instance
 ssec2C -i ID_NUMBER
 ```
 
-### 2. Install all the programs we'll need
+## 2. Install all the programs we'll need
 
 Once inside the instance, install git
 
@@ -44,7 +44,7 @@ chmod +x install_all.sh
 ./install_all.sh 
 ```
 
-### 3. Configure RepeatMasker and RepeatModeler
+## 3. Configure RepeatMasker and RepeatModeler
 
 Run the [config_RM.sh](config_RM.sh) script. You'll need to feed in the answers below at the prompts. 
 
@@ -88,10 +88,25 @@ Add a Search Engine, Enter Selection: `3`
 
 LTR Structural Identification Pipeline [optional], Do you wish to configure RepeatModeler for this type of analysis: `n`
 
-**This should configure RepeatModeler!**
+**This should configure RepeatModeler. You're all set!**
 
+## 4. Run some things
 
+`source ~/.profile` 
 
+Now you can run any of the installed programs from anywhere!
+
+## 5. Terminate the instance when your analysis is done
+
+Log out.
+
+`exit`
+
+Then terminate the instance
+
+```
+ssec2C -i ID_NUMBER -t
+```
 
 
 
