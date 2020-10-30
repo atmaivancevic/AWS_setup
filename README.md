@@ -92,9 +92,9 @@ LTR Structural Identification Pipeline [optional], Do you wish to configure Repe
 
 ## 4. Run some things
 
-Remember to either log out, or `source ~/.profile` first, to update your .profile to include the new bin dir. 
+Remember to either log out, or `source ~/.profile` first, to update your .profile to include the new `bin` dir with all installed programs. 
 
-Then you can run any of the installed programs from anywhere! You can see all installed programs in the `bin/` and `src/` dirs of `/mnt/local`. You should create analysis directories & results files on `/mnt/local` too, since $HOME doesn't have much space.  
+Everything that's been installed can be found in the `bin/` and `src/` dirs of `/mnt/local`. You should create analysis directories & results files on `/mnt/local` too, since $HOME doesn't have much space.  
 
 ## 5. Terminate the instance when your analysis is done
 
