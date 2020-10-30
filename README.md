@@ -40,4 +40,13 @@ chmod +x install_all.sh
 ./install_all.sh 
 ```
 
+Next, run the [config_RM.sh](config_RM.sh) script. Note that you'll need to feed in program dirs at the prompts. 
+
+```
+cd AWS_setup/
+chmod +x config_RM.sh 
+./config_RM.sh 
+```
+
+Feed in the following at each of the prompts:
 
