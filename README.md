@@ -98,7 +98,7 @@ Everything that's been installed can be found in the `bin/` and `src/` dirs of `
 
 ## 5. Terminate the instance when your analysis is done
 
-Log out.
+Log out
 
 ```
 exit
