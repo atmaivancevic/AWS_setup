@@ -93,19 +93,27 @@ LTR Structural Identification Pipeline [optional], Do you wish to configure Repe
 ## 4. Install MELT
 
 Downloading MELT requires signing this software licence agreement: https://melt.igs.umaryland.edu/downloads.php
+
 I signed it on our behalf (if that counts?) and put the latest release (MELTv2.2.2.tar.gz) on the S3 bucket, under directory repeat_essentials/ 
 
 You'll need to copy this from S3 to the instance and then unpack the .tar.gz file, e.g.:
 
 ```
+# go to src dir
 cd /mnt/local/src
+
 # copy MELTv2.2.2.tar.gz from S3 repeat_essentials/ or from the website above
+
+# unpack
 tar zxf MELTv2.2.2.tar.gz
 rm MELTv2.2.2.tar.gz
 
+# make symlink
+cd MELTv2.2.2
+ln -s "$(pwd)/MELT.jar" /mnt/local/bin/MELT.jar
 ```
 
-For more information about MELt, see https://melt.igs.umaryland.edu/manual.php
+For more information about MELT, see https://melt.igs.umaryland.edu/manual.php
 
 ## 5. Run some things
 
