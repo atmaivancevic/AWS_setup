@@ -90,13 +90,30 @@ LTR Structural Identification Pipeline [optional], Do you wish to configure Repe
 
 ### Congratulations!  RepeatModeler is now ready to use.
 
-## 4. Run some things
+## 4. Install MELT
+
+Downloading MELT requires signing this software licence agreement: https://melt.igs.umaryland.edu/downloads.php
+I signed it on our behalf (if that counts?) and put the latest release (MELTv2.2.2.tar.gz) on the S3 bucket, under directory repeat_essentials/ 
+
+You'll need to copy this from S3 to the instance and then unpack the .tar.gz file, e.g.:
+
+```
+cd /mnt/local/src
+# copy MELTv2.2.2.tar.gz from S3 repeat_essentials/ or from the website above
+tar zxf MELTv2.2.2.tar.gz
+rm MELTv2.2.2.tar.gz
+
+```
+
+For more information about MELt, see https://melt.igs.umaryland.edu/manual.php
+
+## 5. Run some things
 
 Remember to either log out, or `source ~/.profile` first, to update your .profile to include the new `bin` dir with all installed programs. 
 
 Everything that's been installed can be found in the `bin/` and `src/` dirs of `/mnt/local`. You should create analysis directories & results files on `/mnt/local` too, since $HOME doesn't have much space.  
 
-## 5. Terminate the instance when your analysis is done
+## 6. Terminate the instance when your analysis is done
 
 Log out
 
