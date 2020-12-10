@@ -90,7 +90,7 @@ LTR Structural Identification Pipeline [optional], Do you wish to configure Repe
 
 ### Congratulations!  RepeatModeler is now ready to use.
 
-## 4. Install MELT
+## 4. Copy over MELT
 
 Downloading MELT requires signing this software licence agreement: https://melt.igs.umaryland.edu/downloads.php
 
