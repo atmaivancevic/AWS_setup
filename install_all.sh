@@ -152,3 +152,9 @@ rm RepeatMasker-4.1.1.tar
 cd /mnt/local/src
 git clone https://github.com/Dfam-consortium/RepeatModeler.git
 
+# install MELT dependencies i.e. java 1.8 and bowtie2
+# check if java version is already 1.8
+java -version
+
+# install bowtie2
+sudo apt install bowtie2 --assume-yes
