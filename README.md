@@ -115,13 +115,18 @@ ln -s "$(pwd)/MELT.jar" /mnt/local/bin/MELT.jar
 
 For more information about MELT, see https://melt.igs.umaryland.edu/manual.php
 
-## 5. Run some things
+## 5. Get ready to run some things
 
 Remember to either log out, or `source ~/.profile` first, to update your .profile to include the new `bin` dir with all installed programs. 
 
-Everything that's been installed can be found in the `bin/` and `src/` dirs of `/mnt/local`. You should create analysis directories & results files on `/mnt/local` too, since $HOME doesn't have much space.  
+Everything that's been installed can be found in the `bin/` and `src/` dirs of `/mnt/local`. You should create analysis directories & results files on `/mnt/local` too, since $HOME doesn't have much space. 
 
-## 6. Terminate the instance when your analysis is done
+## 6. RepeatMasker/RepeatModeler analysis
+ 
+
+## 7. MELT analysis
+
+## 8. Terminate the instance when your analysis is done
 
 Log out
 
