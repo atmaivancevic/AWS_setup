@@ -154,7 +154,7 @@ cd repbase
 aws s3 cp s3://DUMMY/repeat_essentials/repbase/RMRBSeqs.fasta .
 ``` 
 
-First, run RepeatMasker with the default dfam library. Note: use screen and "-L" to log screen output. 
+Run RepeatMasker with the default dfam library. Note: use screen and "-L" to log screen output. 
 ```
 screen -L -S myscreen
 mkdir /mnt/local/repeatmasker_defaultlib_output
