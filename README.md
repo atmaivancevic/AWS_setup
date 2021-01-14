@@ -131,7 +131,7 @@ Remember to either log out, or `source ~/.profile` first, to update your .profil
 
 Everything that's been installed can be found in the `bin/` and `src/` dirs of `/mnt/local`. You should create analysis directories & results files on `/mnt/local` too, since $HOME doesn't have much space. 
 
-## 6. RepeatMasker/RepeatModeler analysis
+## 6a. RepeatMasker annotation
 
 Export your AWS keys again, in order to download genomes and repeat files from S3.
 
@@ -153,6 +153,27 @@ mkdir repbase
 cd repbase
 aws s3 cp s3://DUMMY/repeat_essentials/repbase/RMRBSeqs.fasta .
 ``` 
+
+First, run RepeatMasker with the default dfam library. Note: use screen and "-L" to log screen output. 
+```
+screen -L -S myscreen
+mkdir /mnt/local/repeatmasker_defaultlib_output
+RepeatMasker -dir /mnt/local/repeatmasker_defaultlib_output -pa 8 --nolow -noisy -xsmall -species Eukaryota /mnt/local/genome/Chromosomes.v2.fasta
+```
+
+In another window (or another instance), run RepeatMasker with the Repbase library. Note that this will take longer because it's a much more comprehensive  library. 
+```
+screen -L -S anotherscreen
+mkdir /mnt/local/repeatmasker_repbaselib_output
+RepeatMasker -dir /mnt/local/repeatmasker_repbaselib_output -pa 8 --nolow -noisy -xsmall -lib /mnt/local/repbase/RMRBSeqs.fasta /mnt/local/genome/Chromosomes.v2.fasta
+```
+
+Once these jobs are finished, transfer the results files to S3, e.g.:
+```
+aws s3 cp Chromosomes.v2.fasta.cat.defaultlibrary.gz s3://DUMMY/repeat_results/
+```
+
+## 6b. RepeatModeler annotation
 
 ## 7. MELT analysis
 
