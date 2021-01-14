@@ -152,6 +152,86 @@ rm RepeatMasker-4.1.1.tar
 cd /mnt/local/src
 git clone https://github.com/Dfam-consortium/RepeatModeler.git
 
+# install zlib
+sudo apt install zlib1g-dev
+
+# install genometools
+# from inside src dir
+cd /mnt/local/src
+wget http://genometools.org/pub/genometools-1.6.1.tar.gz
+tar zxvf genometools-1.6.1.tar.gz
+rm genometools-1.6.1.tar.gz
+cd genometools-1.6.1; make cairo=no
+ln -s "$(pwd)/bin/gt" $BIN_DIR
+
+# install BLAST+
+# from inside src dir
+cd /mnt/local/src
+wget https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.11.0+-src.tar.gz
+tar xfvz ncbi-blast-2.11.0+-src.tar.gz
+rm ncbi-blast-2.11.0+-src.tar.gz
+cd ncbi-blast-2.11.0+-src/c++; ./configure
+cd ReleaseMT/build
+make all_r
+cd ../bin
+ln -s "$(pwd)/makeblastdb" $BIN_DIR
+ln -s "$(pwd)/blastn" $BIN_DIR
+ln -s "$(pwd)/blastx" $BIN_DIR
+
+# install cd-hit
+# from inside src dir
+cd /mnt/local/src
+wget https://github.com/weizhongli/cdhit/releases/download/V4.8.1/cd-hit-v4.8.1-2019-0228.tar.gz
+tar xfvz cd-hit-v4.8.1-2019-0228.tar.gz
+rm cd-hit-v4.8.1-2019-0228.tar.gz
+cd cd-hit-v4.8.1-2019-0228; make
+ln -s "$(pwd)/cd-hit" $BIN_DIR
+ln -s "$(pwd)/cd-hit-est" $BIN_DIR
+
+# install HMMER
+# from inside src dir
+cd /mnt/local/src
+wget http://eddylab.org/software/hmmer/hmmer.tar.gz
+tar xfvz hmmer.tar.gz
+rm hmmer.tar.gz
+cd hmmer-3.3.2
+./configure --prefix /mnt/local
+make
+make check
+make install
+ln -s "$(pwd)/src/hmmsearch" $BIN_DIR
+
+# install LTR_retriever
+# from inside src dir
+cd /mnt/local/src
+wget https://github.com/oushujun/LTR_retriever/archive/v2.9.0.tar.gz
+tar xfvz v2.9.0.tar.gz
+rm v2.9.0.tar.gz
+cd LTR_retriever-2.9.0/
+ln -s "$(pwd)/LTR_retriever" $BIN_DIR
+
+# install mafft
+# from inside src dir
+cd /mnt/local/src
+wget https://mafft.cbrc.jp/alignment/software/mafft-7.475-with-extensions-src.tgz
+tar xfvz mafft-7.475-with-extensions-src.tgz
+rm mafft-7.475-with-extensions-src.tgz
+cd mafft-7.475-with-extensions/core
+sed -i 's|PREFIX = /usr/local|PREFIX = /mnt/local|' Makefile
+sed -i 's|BINDIR = $(PREFIX)/bin|BINDIR = /mnt/local/bin|' Makefile
+make clean
+make
+make install
+
+# install ninja v0.95
+# from inside src dir
+cd /mnt/local/src
+wget https://github.com/TravisWheelerLab/NINJA/archive/0.95-cluster_only.tar.gz
+tar xfvz 0.95-cluster_only.tar.gz
+rm 0.95-cluster_only.tar.gz
+cd NINJA-0.95-cluster_only/NINJA; make
+ln -s "$(pwd)/Ninja" $BIN_DIR
+
 ###################################################################
 # INSTALL MELT DEPENDENCIES
 
