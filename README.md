@@ -133,7 +133,7 @@ Everything that's been installed can be found in the `bin/` and `src/` dirs of `
 
 ## 6a. RepeatMasker annotation
 
-Export your AWS keys again, in order to download genomes and repeat files from S3.
+Export your AWS keys again, in order to download genomes and repeat library files from S3.
 
 The following will show you how to run repeatmasker and repeatmodeler on your genome of choice. We'll be using the elephant genome as an example.
 
