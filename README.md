@@ -158,6 +158,7 @@ First, run RepeatMasker with the default dfam library. Note: use screen and "-L"
 ```
 screen -L -S myscreen
 mkdir /mnt/local/repeatmasker_defaultlib_output
+
 RepeatMasker -dir /mnt/local/repeatmasker_defaultlib_output -pa 8 --nolow -noisy -xsmall -species Eukaryota /mnt/local/genome/Chromosomes.v2.fasta
 ```
 
@@ -165,6 +166,7 @@ In another window (or another instance), run RepeatMasker with the Repbase libra
 ```
 screen -L -S anotherscreen
 mkdir /mnt/local/repeatmasker_repbaselib_output
+
 RepeatMasker -dir /mnt/local/repeatmasker_repbaselib_output -pa 8 --nolow -noisy -xsmall -lib /mnt/local/repbase/RMRBSeqs.fasta /mnt/local/genome/Chromosomes.v2.fasta
 ```
 
