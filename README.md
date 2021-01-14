@@ -132,7 +132,27 @@ Remember to either log out, or `source ~/.profile` first, to update your .profil
 Everything that's been installed can be found in the `bin/` and `src/` dirs of `/mnt/local`. You should create analysis directories & results files on `/mnt/local` too, since $HOME doesn't have much space. 
 
 ## 6. RepeatMasker/RepeatModeler analysis
- 
+
+Export your AWS keys again, in order to download genomes and repeat files from S3.
+
+The following will show you how to run repeatmasker and repeatmodeler on your genome of choice. We'll be using the elephant genome as an example.
+
+You will first need to download the elephant genome (on S3: elephant/Chromosomes.v2.fasta) and the repbase library in fasta format ( /repeat_essentials/repbase/RMRBSeqs.fasta). 
+
+```
+# e.g. download elephant genome
+# (replace DUMMY with AWS name)
+cd /mnt/local
+mkdir genome
+cd genome/
+aws s3 cp s3://DUMMY/elephant/Chromosomes.v2.fasta .
+
+# download repbase library file
+cd /mnt/local
+mkdir repbase
+cd repbase
+aws s3 cp s3://DUMMY/repeat_essentials/repbase/RMRBSeqs.fasta .
+``` 
 
 ## 7. MELT analysis
 
