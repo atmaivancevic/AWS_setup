@@ -181,10 +181,17 @@ aws s3 cp Chromosomes.v2.fasta.out.repbaselibrary s3://DUMMY/repeat_results/
 
 ## 6b. RepeatModeler annotation
 
-Again, download your genome.
+Again, download your genome from S3. 
 
+Example steps for snake:
 ```
 /mnt/local/src/RepeatModeler/BuildDatabase -name ./BoCo ../genome/BoaCon_7C_scaffolds.fa
+RepeatModeler -database BoCo -LTRStruct -pa 8 > ./run.out
+```
+
+Then upload the results to S3.
+```
+aws s3 cp YOURFILE s3://DUMMY/snake_boa/repeatmoder/
 ```
 
 ## 7. MELT analysis
