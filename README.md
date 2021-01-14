@@ -86,7 +86,17 @@ RMBLAST_DIR: `/mnt/local/src/rmblast-2.10.0/bin`
 
 Add a Search Engine, Enter Selection: `3`
 
-LTR Structural Identification Pipeline [optional], Do you wish to configure RepeatModeler for this type of analysis: `n`
+LTR Structural Identification Pipeline [optional], Do you wish to configure RepeatModeler for this type of analysis: `y`
+
+GENOMETOOLS_DIR: `/mnt/local/src/genometools-1.6.1/bin`
+
+LTR_RETRIEVER_DIR: `/mnt/local/src/LTR_retriever-2.9.0`
+
+MAFFT_DIR: `/mnt/local/bin`
+
+NINJA_DIR: `/mnt/local/src/NINJA-0.95-cluster_only/NINJA`
+
+CDHIT_DIR: `/mnt/local/src/cd-hit-v4.8.1-2019-0228`
 
 ### Congratulations!  RepeatModeler is now ready to use.
 
