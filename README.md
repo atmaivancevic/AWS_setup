@@ -162,9 +162,9 @@ mkdir /mnt/local/repeatmasker_defaultlib_output
 RepeatMasker -dir /mnt/local/repeatmasker_defaultlib_output -pa 8 --nolow -noisy -xsmall -species Eukaryota /mnt/local/genome/Chromosomes.v2.fasta
 ```
 
-Note: using an i3.2xlarge instance, this step took approx 23 hrs for the elephant genome, 22 hrs for the cow genome, and 16 hrs for the snake genome.
+**Note: using an i3.2xlarge instance, this step took approx 23 hrs for the elephant genome, 22 hrs for the cow genome, and 16 hrs for the snake genome.**
 
-In another window (or another instance), run RepeatMasker with the Repbase library. Note that this will take longer because it's a much more comprehensive  library. 
+On another instance, run RepeatMasker with the Repbase library. Note that this will take longer because it's a much more comprehensive  library. 
 ```
 screen -L -S anotherscreen
 mkdir /mnt/local/repeatmasker_repbaselib_output
@@ -172,7 +172,7 @@ mkdir /mnt/local/repeatmasker_repbaselib_output
 RepeatMasker -dir /mnt/local/repeatmasker_repbaselib_output -pa 8 --nolow -noisy -xsmall -lib /mnt/local/repbase/RMRBSeqs.fasta /mnt/local/genome/Chromosomes.v2.fasta
 ```
 
-Note: using an i3.8xlarge instance, this step took approx 58 hrs for the elephant genome, 50 hrs for the cow genome, and 20 hrs for the snake genome.
+**Note: using an i3.8xlarge instance, this step took approx 58 hrs for the elephant genome, 50 hrs for the cow genome, and 20 hrs for the snake genome.**
 
 Once these jobs are finished, transfer the results files to S3, e.g.:
 ```
