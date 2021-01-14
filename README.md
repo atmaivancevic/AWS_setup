@@ -39,7 +39,7 @@ git clone https://github.com/atmaivancevic/AWS_setup.git
 Run the [install_all.sh](install_all.sh) script
 
 ```
-cd AWS_setup/
+cd ~/AWS_setup
 chmod +x install_all.sh 
 ./install_all.sh 
 ```
@@ -49,7 +49,7 @@ chmod +x install_all.sh
 Run the [config_RM.sh](config_RM.sh) script. You'll need to feed in the answers below at the prompts. 
 
 ```
-cd AWS_setup/
+cd ~/AWS_setup
 chmod +x config_RM.sh 
 ./config_RM.sh 
 ```
