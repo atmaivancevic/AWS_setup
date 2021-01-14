@@ -181,6 +181,12 @@ aws s3 cp Chromosomes.v2.fasta.out.repbaselibrary s3://DUMMY/repeat_results/
 
 ## 6b. RepeatModeler annotation
 
+Again, download your genome.
+
+```
+/mnt/local/src/RepeatModeler/BuildDatabase -name ./BoCo ../genome/BoaCon_7C_scaffolds.fa
+```
+
 ## 7. MELT analysis
 
 ## 8. Terminate the instance when your analysis is done
