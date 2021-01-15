@@ -186,7 +186,7 @@ aws s3 cp Chromosomes.v2.fasta.out.repbaselibrary s3://LAB/repeat_results/
 
 ### 5b. RepeatModeler annotation
 
-For this step, you will only need your genome (e.g. elephant/Chromosomes.v2.fasta)
+For this step, you will only need your genome (e.g. on S3: elephant/Chromosomes.v2.fasta)
 
 Build a RM database and then run RepeatModeler, e.g.:
 ```
