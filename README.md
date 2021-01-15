@@ -112,7 +112,8 @@ You'll need to copy this from S3 to the instance and then unpack the .tar.gz fil
 # go to src dir
 cd /mnt/local/src
 
-# copy MELTv2.2.2.tar.gz from S3 repeat_essentials/ or from the website above
+# copy MELT from S3 dir repeat_essentials/ 
+aws s3 cp s3://LAB/repeat_essentials/MELTv2.2.2.tar.gz .
 
 # unpack
 tar zxf MELTv2.2.2.tar.gz
