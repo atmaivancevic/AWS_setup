@@ -126,13 +126,13 @@ ln -s "$(pwd)/MELT.jar" /mnt/local/bin/MELT.jar
 
 For more information about MELT, see https://melt.igs.umaryland.edu/manual.php
 
-## 5. Get ready to run some things
+## 5. Example analysis
 
 Remember to either log out, or `source ~/.profile` first, to update your .profile to include the new `bin` dir with all installed programs. 
 
 Everything that's been installed can be found in the `bin/` and `src/` dirs of `/mnt/local`. You should create analysis directories & results files on `/mnt/local` too, since $HOME doesn't have much space. 
 
-## 6a. RepeatMasker annotation
+### 5a. RepeatMasker annotation
 
 Export your AWS keys again, in order to download genomes and repeat library files from S3.
 
@@ -180,7 +180,7 @@ Once these jobs are finished, transfer the results files to S3, e.g.:
 aws s3 cp Chromosomes.v2.fasta.out.repbaselibrary s3://LAB/repeat_results/
 ```
 
-## 6b. RepeatModeler annotation
+### 5b. RepeatModeler annotation
 
 For this step, you will only need your genome (e.g. elephant/Chromosomes.v2.fasta)
 
@@ -196,9 +196,9 @@ Then upload the results (most importantly, the consensus sequences) to S3.
 aws s3 cp YOURFILE s3://LAB/snake_boa/repeatmoder/
 ```
 
-## 7. MELT analysis
+### 5c. MELT analysis
 
-## 8. Terminate the instance when your analysis is done
+## 6. Terminate the instance when your analysis is done
 
 Log out
 
