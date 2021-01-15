@@ -141,17 +141,17 @@ You will first need to download the elephant genome (on S3: elephant/Chromosomes
 
 ```
 # e.g. download elephant genome
-# (replace DUMMY with AWS name)
+# (replace LAB with lab name)
 cd /mnt/local
 mkdir genome
 cd genome/
-aws s3 cp s3://DUMMY/elephant/Chromosomes.v2.fasta .
+aws s3 cp s3://LAB/elephant/Chromosomes.v2.fasta .
 
 # download repbase library file
 cd /mnt/local
 mkdir repbase
 cd repbase
-aws s3 cp s3://DUMMY/repeat_essentials/repbase/RMRBSeqs.fasta .
+aws s3 cp s3://LAB/repeat_essentials/repbase/RMRBSeqs.fasta .
 ``` 
 
 Run RepeatMasker with the default dfam library. Use screen and "-L" to log screen output. 
@@ -191,7 +191,7 @@ RepeatModeler -database BoCo -LTRStruct -pa 8 > ./run.out
 
 Then upload the results to S3.
 ```
-aws s3 cp YOURFILE s3://DUMMY/snake_boa/repeatmoder/
+aws s3 cp YOURFILE s3://LAB/snake_boa/repeatmoder/
 ```
 
 ## 7. MELT analysis
