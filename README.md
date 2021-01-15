@@ -198,6 +198,8 @@ aws s3 cp YOURFILE s3://LAB/snake_boa/repeatmoder/
 
 ### 5c. MELT analysis
 
+Use the consensus seqs for each genome (identified with RepeatMasker/RepeatModeler) as input to MELT to find potential polymorphic TEs. 
+
 ## 6. Terminate the instance when your analysis is done
 
 Log out
