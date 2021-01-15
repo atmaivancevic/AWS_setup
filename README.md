@@ -1,6 +1,6 @@
 # AWS_setup
 
-## Example for setting up a new instance
+## Example for setting up a new instance & running repeat analyses
 
 ## 1. Launch an instance and log in
 
