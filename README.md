@@ -98,7 +98,7 @@ NINJA_DIR: `/mnt/local/src/NINJA-0.95-cluster_only/NINJA`
 
 CDHIT_DIR: `/mnt/local/src/cd-hit-v4.8.1-2019-0228`
 
-### Congratulations!  RepeatModeler is now ready to use.
+### Yay!  RepeatModeler is now ready to use.
 
 ## 4. Copy over MELT
 
