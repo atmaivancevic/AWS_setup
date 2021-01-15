@@ -132,7 +132,7 @@ Remember to either log out, or `source ~/.profile` first, to update your .profil
 
 Everything that's been installed can be found in the `bin/` and `src/` dirs of `/mnt/local`. You should create analysis directories & results files on `/mnt/local` too, since $HOME doesn't have much space. 
 
-### 5a. RepeatMasker annotation
+### 5a. RepeatMasker
 
 Export your AWS keys again, in order to download genomes and repeat library files from S3.
 ```
@@ -184,7 +184,7 @@ Once these jobs are finished, transfer the results files to S3, e.g.:
 aws s3 cp Chromosomes.v2.fasta.out.repbaselibrary s3://LAB/repeat_results/
 ```
 
-### 5b. RepeatModeler annotation
+### 5b. RepeatModeler
 
 For this step, you will only need your genome (e.g. on S3: elephant/Chromosomes.v2.fasta)
 
@@ -202,7 +202,7 @@ Then upload the results (most importantly, the consensus sequences) to S3.
 aws s3 cp YOURFILE s3://LAB/elephant/repeatmodeler/
 ```
 
-### 5c. MELT analysis
+### 5c. MELT
 
 Use the consensus seqs for each genome (identified with RepeatMasker/RepeatModeler) as input to MELT to find potential polymorphic TEs. 
 
