@@ -176,7 +176,7 @@ RepeatMasker -dir /mnt/local/repeatmasker_repbaselib_output -pa 8 --nolow -noisy
 
 Once these jobs are finished, transfer the results files to S3, e.g.:
 ```
-aws s3 cp Chromosomes.v2.fasta.out.repbaselibrary s3://DUMMY/repeat_results/
+aws s3 cp Chromosomes.v2.fasta.out.repbaselibrary s3://LAB/repeat_results/
 ```
 
 ## 6b. RepeatModeler annotation
