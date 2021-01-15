@@ -169,7 +169,7 @@ RepeatMasker -dir /mnt/local/repeatmasker_defaultlib_output -pa 8 --nolow -noisy
 
 **Note: using an i3.2xlarge instance, this step took approx 23 hrs (real time) for the elephant genome, 22 hrs for the cow genome, and 16 hrs for the snake genome.**
 
-On another instance, run RepeatMasker with the Repbase library. Note that this will take longer because it's a much more comprehensive  library. 
+On another instance, run RepeatMasker again with the Repbase library. Note that this will take longer because it's a much more comprehensive  library. 
 ```
 screen -L -S anotherscreen
 mkdir /mnt/local/repeatmasker_repbaselib_output
