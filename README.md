@@ -22,7 +22,7 @@ Connect to the new instance
 ssec2C -i ID_NUMBER
 ```
 
-## 2. Install all the programs we'll need
+## 2. Install all the required programs
 
 Once inside the instance, install git
 
