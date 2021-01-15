@@ -44,7 +44,7 @@ chmod +x install_all.sh
 ./install_all.sh 
 ```
 
-Note: this step may take an hour or so.
+**Note: this step may take an hour or two.**
 
 ## 3. Configure RepeatMasker and RepeatModeler
 
