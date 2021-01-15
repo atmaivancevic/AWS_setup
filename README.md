@@ -181,15 +181,16 @@ aws s3 cp Chromosomes.v2.fasta.out.repbaselibrary s3://LAB/repeat_results/
 
 ## 6b. RepeatModeler annotation
 
-Again, download your genome from S3. 
+For this step, you will only need your genome (e.g. elephant/Chromosomes.v2.fasta)
 
-Example steps for snake:
+Build a RM database and then run RepeatModeler, e.g.:
 ```
 /mnt/local/src/RepeatModeler/BuildDatabase -name ./BoCo ../genome/BoaCon_7C_scaffolds.fa
+
 RepeatModeler -database BoCo -LTRStruct -pa 8 > ./run.out
 ```
 
-Then upload the results to S3.
+Then upload the results (most importantly, the consensus sequences) to S3.
 ```
 aws s3 cp YOURFILE s3://LAB/snake_boa/repeatmoder/
 ```
