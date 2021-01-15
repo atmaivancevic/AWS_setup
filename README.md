@@ -188,16 +188,18 @@ aws s3 cp Chromosomes.v2.fasta.out.repbaselibrary s3://LAB/repeat_results/
 
 For this step, you will only need your genome (e.g. on S3: elephant/Chromosomes.v2.fasta)
 
-Build a RM database and then run RepeatModeler, e.g.:
+Build a database from the genome, and then run RepeatModeler, e.g.:
 ```
-/mnt/local/src/RepeatModeler/BuildDatabase -name ./BoCo ../genome/BoaCon_7C_scaffolds.fa
+screen -L -S dumboscreen
 
-RepeatModeler -database BoCo -LTRStruct -pa 8 > ./run.out
+/mnt/local/src/RepeatModeler/BuildDatabase -name Dumbo /mnt/local/genome/Chromosomes.v2.fasta
+
+RepeatModeler -database Dumbo -LTRStruct -pa 8 > run.out
 ```
 
 Then upload the results (most importantly, the consensus sequences) to S3.
 ```
-aws s3 cp YOURFILE s3://LAB/snake_boa/repeatmoder/
+aws s3 cp YOURFILE s3://LAB/elephant/repeatmodeler/
 ```
 
 ### 5c. MELT analysis
