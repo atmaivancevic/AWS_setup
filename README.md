@@ -44,6 +44,8 @@ chmod +x install_all.sh
 ./install_all.sh 
 ```
 
+Note: this step may take an hour or so.
+
 ## 3. Configure RepeatMasker and RepeatModeler
 
 Run the [config_RM.sh](config_RM.sh) script. You'll need to feed in the answers below at the prompts. 
