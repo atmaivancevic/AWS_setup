@@ -200,7 +200,7 @@ screen -L -S dumboscreen
 RepeatModeler -database Dumbo -LTRStruct -pa 8 > run.out
 ```
 
-**Note: using i3.8xlarge instances, this step took less than 24 hrs for elephant & snake.
+**Note: using i3.8xlarge instances, this step took less than 24 hrs for elephant & snake.**
 
 Then upload the results (most importantly, the consensus sequences) to S3.
 ```
