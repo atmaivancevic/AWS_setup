@@ -114,8 +114,9 @@ You'll need to copy this from S3 to the instance and then unpack the .tar.gz fil
 # go to src dir
 cd /mnt/local/src
 
-# copy MELT from S3 dir repeat_essentials/ 
-aws s3 cp s3://LAB/repeat_essentials/MELTv2.2.2.tar.gz .
+# copy MELT from S3 dir repeat_essentials/
+# note: you'll need to change MYBUCKET below
+aws s3 cp s3://MYBUCKET/repeat_essentials/MELTv2.2.2.tar.gz .
 
 # unpack
 tar zxf MELTv2.2.2.tar.gz
@@ -148,17 +149,17 @@ You will first need to download the elephant genome (on S3: elephant/Chromosomes
 
 ```
 # e.g. download elephant genome
-# (replace LAB with lab name)
+# (replace MYBUCKET with lab name)
 cd /mnt/local
 mkdir genome
 cd genome/
-aws s3 cp s3://LAB/elephant/Chromosomes.v2.fasta .
+aws s3 cp s3://MYBUCKET/elephant/Chromosomes.v2.fasta .
 
 # download repbase library file
 cd /mnt/local
 mkdir repbase
 cd repbase
-aws s3 cp s3://LAB/repeat_essentials/repbase/RMRBSeqs.fasta .
+aws s3 cp s3://MYBUCKET/repeat_essentials/repbase/RMRBSeqs.fasta .
 ``` 
 
 Run RepeatMasker with the default dfam library. Use screen and "-L" to log screen output. 
@@ -183,7 +184,7 @@ RepeatMasker -dir /mnt/local/repeatmasker_repbaselib_output -pa 8 --nolow -noisy
 
 Once these jobs are finished, transfer the results files to S3, e.g.:
 ```
-aws s3 cp Chromosomes.v2.fasta.out.repbaselibrary s3://LAB/repeat_results/
+aws s3 cp Chromosomes.v2.fasta.out.repbaselibrary s3://MYBUCKET/repeat_results/
 ```
 
 ### 5b. RepeatModeler
@@ -201,7 +202,7 @@ RepeatModeler -database Dumbo -LTRStruct -pa 8 > run.out
 
 Then upload the results (most importantly, the consensus sequences) to S3.
 ```
-aws s3 cp YOURFILE s3://LAB/elephant/repeatmodeler/
+aws s3 cp YOURFILE s3://MYBUCKET/elephant/repeatmodeler/
 ```
 
 ### 5c. MELT
